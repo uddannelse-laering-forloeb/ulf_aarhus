@@ -105,6 +105,9 @@ a {
     border-bottom: 5px solid #edd71c;
 }
 
+.ribbon {
+    display: none;
+}
 
 .field--title {
     position: absolute;
