@@ -1,4 +1,7 @@
-#ULF Aarhus theme changelog
+#Aarhus theme changelog
+
+#2.5.9
+* Added siteimprove
 
 #v2.5.0
 * ULF base 2.5.0 upgrade
