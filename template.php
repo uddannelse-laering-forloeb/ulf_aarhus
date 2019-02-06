@@ -18,6 +18,11 @@ function ulf_aarhus_preprocess_page(&$variables) {
 function ulf_aarhus_preprocess_node(&$variables) {
   // Provide newsletter block for static pages.
   if (module_exists('heyloyalty_newsletter')) {
-    $variables['newsletter_block'] = module_invoke('heyloyalty_newsletter', 'block_view', 'heyloyalty-newsletter-signup');
+    if (variable_get('heyloyalty_signup_enable_sidebar', '')) {
+      $variables['newsletter_block'] = module_invoke('heyloyalty_newsletter', 'block_view', 'heyloyalty-newsletter-signup');
+    }
+    else {
+      $variables['newsletter_block'] = NULL;
+    }
   }
 }
