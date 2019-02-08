@@ -2,3 +2,5 @@ name = Ulf i Aarhus
 version = VERSION
 core = 7.x
 base theme = ulf_default
+
+scripts[] = scripts/min/siteimprove-min.js

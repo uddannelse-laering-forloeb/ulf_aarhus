@@ -75,7 +75,7 @@ a {
 }
 
 .content--image {
-    margin-bottom: 120px;
+    padding-bottom: 60px;
     position: relative;
     width: 100%;
 }
@@ -104,7 +104,7 @@ a {
 .field--title {
     position: absolute;
     font-size: 30px;
-    top: 260px;
+    bottom: 0;
 }
 
 .content--main {
