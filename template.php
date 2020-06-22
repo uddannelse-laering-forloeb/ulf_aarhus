@@ -11,7 +11,6 @@ function ulf_aarhus_preprocess_page(&$variables) {
   $variables['hamburger_icon_path'] = drupal_get_path('theme',$GLOBALS['theme']);
 }
 
-
 /**
  * Implements hook_preprocess_node().
  */
@@ -24,5 +23,15 @@ function ulf_aarhus_preprocess_node(&$variables) {
     else {
       $variables['newsletter_block'] = NULL;
     }
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function ulf_aarhus_preprocess_field(&$variables) {
+  // Provide newsletter block for static pages.
+  if($variables['element']['#field_name'] == 'field_video') {
+    print_r($variables['element']);
   }
 }
