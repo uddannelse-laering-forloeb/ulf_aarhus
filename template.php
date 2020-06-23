@@ -26,12 +26,3 @@ function ulf_aarhus_preprocess_node(&$variables) {
   }
 }
 
-/**
- * Implements hook_preprocess_node().
- */
-function ulf_aarhus_preprocess_field(&$variables) {
-  // Provide newsletter block for static pages.
-  if($variables['element']['#field_name'] == 'field_video') {
-    print_r($variables['items']['0']);
-  }
-}
