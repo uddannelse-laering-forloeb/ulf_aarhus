@@ -11,16 +11,16 @@
 
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Regular.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/Asap-Regular.ttf");
     /* Pretty Modern Browsers */ }
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Bold.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/fonts/Asap-Bold.ttf");
     /* Pretty Modern Browsers */
     font-weight: bold; }
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Italic.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/fonts/Asap-Italic.ttf");
     /* Pretty Modern Browsers */
     font-style: italic; }
 
@@ -37,7 +37,7 @@ body {
 
 /* Logo display. */
 .print-logo {
-    background: url("../images/header-bg.jpg");
+    background: red url("/sites/ulfiaarhus.dk/themes/ulf_aarhus/images/header-bg.jpg");
 }
 
 .print-logo img{
@@ -75,7 +75,7 @@ a {
 }
 
 .content--image {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
     width: 100%;
 }
@@ -102,21 +102,18 @@ a {
 
 
 .field--title {
-    position: absolute;
     font-size: 30px;
-    bottom: 0;
 }
 
 .content--main {
-    float: left;
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .content--meta {
-    float: right;
     position: relative;
-    width: 45%;
+    width: 100%;
+    padding-top: 30px;
 }
 
 
@@ -136,6 +133,7 @@ a {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark {
@@ -144,6 +142,7 @@ a {
     display: block;
     margin-bottom: 20px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark .is-full-width {
@@ -175,13 +174,11 @@ a {
 }
 
 .is-inline .block--field-label {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .is-inline .block--field-text {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .block--field-text {
@@ -204,6 +201,7 @@ a {
     color: white;
     background: #17858c;
     padding: 10px;
+    page-break-after : avoid;
 }
 
 .field--collection-content {
