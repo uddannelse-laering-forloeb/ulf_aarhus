@@ -249,14 +249,11 @@ a {
 .world-target a {
   display: inline-block;
   float: left;
+  padding-right: 10px;
 }
 
 .world-target a img {
   display: block;
   height: 100px;
   width: 100px;
-}
-
-.block--wrapper {
-  page-break-inside: avoid;
 }
