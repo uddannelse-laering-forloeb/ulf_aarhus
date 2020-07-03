@@ -11,7 +11,6 @@ function ulf_aarhus_preprocess_page(&$variables) {
   $variables['hamburger_icon_path'] = drupal_get_path('theme',$GLOBALS['theme']);
 }
 
-
 /**
  * Implements hook_preprocess_node().
  */
@@ -26,3 +25,4 @@ function ulf_aarhus_preprocess_node(&$variables) {
     }
   }
 }
+
