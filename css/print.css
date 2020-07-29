@@ -236,24 +236,26 @@ a {
  */
 
 .world-targets {
-  display: inline-block;
-  width: 100%;
-  height: 100px;
+  display: block;
   padding: 0;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 .world-target {
   margin: 0;
+  display: inline-block;
+  padding: 0 10px 0 0;
+  height: 100px;
+  width: 100px;
 }
 
 .world-target a {
-  display: inline-block;
-  float: left;
-  padding-right: 10px;
+  display: block;
 }
 
 .world-target a img {
-  display: block;
   height: 100px;
   width: 100px;
 }
