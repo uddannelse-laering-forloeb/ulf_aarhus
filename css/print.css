@@ -11,18 +11,22 @@
 
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Regular.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/Asap-Regular.ttf");
     /* Pretty Modern Browsers */ }
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Bold.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/fonts/Asap-Bold.ttf");
     /* Pretty Modern Browsers */
     font-weight: bold; }
 @font-face {
     font-family: 'Asap';
-    src: url("../fonts/Asap-Italic.ttf");
+    src: url("/profiles/ulf/themes/ulf_default/fonts/fonts/Asap-Italic.ttf");
     /* Pretty Modern Browsers */
     font-style: italic; }
+
+body, html {
+  height: 100%;
+}
 
 body {
     background: white;
@@ -37,7 +41,7 @@ body {
 
 /* Logo display. */
 .print-logo {
-    background: url("../images/header-bg.jpg");
+    background: red url("/sites/ulfiaarhus.dk/themes/ulf_aarhus/images/header-bg.jpg");
 }
 
 .print-logo img{
@@ -75,48 +79,45 @@ a {
 }
 
 .content--image {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
     width: 100%;
 }
 
 .field--image img{
-    border-bottom: 5px solid #17858c;
+    border-bottom: 0;
 }
 
-.is-dagtilbud  .field--image img{
-    border-bottom: 5px solid #a4da20;
-}
+/*.is-dagtilbud  .field--image img{*/
+/*    border-bottom: 5px solid #a4da20;*/
+/*}*/
 
-.is-grundskole .field--image img {
-    border-bottom: 5px solid #901d7c;
-}
+/*.is-grundskole .field--image img {*/
+/*    border-bottom: 5px solid #901d7c;*/
+/*}*/
 
-.is-ungdomsuddannelse .field--image img {
-    border-bottom: 5px solid #ff6800;
-}
+/*.is-ungdomsuddannelse .field--image img {*/
+/*    border-bottom: 5px solid #ff6800;*/
+/*}*/
 
-.is-course .field--image img {
-    border-bottom: 5px solid #edd71c;
-}
+/*.is-course .field--image img {*/
+/*    border-bottom: 5px solid #edd71c;*/
+/*}*/
 
 
 .field--title {
-    position: absolute;
     font-size: 30px;
-    bottom: 0;
 }
 
 .content--main {
-    float: left;
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .content--meta {
-    float: right;
     position: relative;
-    width: 45%;
+    width: 100%;
+    padding-top: 30px;
 }
 
 
@@ -136,6 +137,7 @@ a {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark {
@@ -144,6 +146,7 @@ a {
     display: block;
     margin-bottom: 20px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark .is-full-width {
@@ -175,13 +178,11 @@ a {
 }
 
 .is-inline .block--field-label {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .is-inline .block--field-text {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .block--field-text {
@@ -204,6 +205,7 @@ a {
     color: white;
     background: #17858c;
     padding: 10px;
+    page-break-after : avoid;
 }
 
 .field--collection-content {
@@ -227,4 +229,33 @@ a {
 
 .field--collection-description {
     font-weight: normal;
+}
+
+/**
+ * World targets
+ */
+
+.world-targets {
+  display: block;
+  padding: 0;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.world-target {
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px 0 0;
+  height: 100px;
+  width: 100px;
+}
+
+.world-target a {
+  display: block;
+}
+
+.world-target a img {
+  height: 100px;
+  width: 100px;
 }
