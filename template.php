@@ -39,6 +39,7 @@ function ulf_aarhus_preprocess_node(&$variables) {
 
           // Provide variables for use in the different templates.
           if ($button['value'] == 'show_free_course_request') {
+            $term = $variables['field_target_group']['0']['taxonomy_term'];
             $path = (isset($term) && $term->name === 'Dagtilbud') ? '/ansoeg/udgiftsdaekning/dagtilbud' : '/ansoeg/udgiftsdaekning';
             $buttons[] = l('Søg om refusion af forløbet', $path, [
               'attributes' => [
