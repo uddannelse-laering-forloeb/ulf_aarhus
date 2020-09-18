@@ -28,7 +28,7 @@ function ulf_aarhus_preprocess_node(&$variables) {
       case 'course':
         $buttons = [];
 
-        if(isset($variables['field_practical_info_buttons'])) {
+        if(isset($variables['field_practical_info_buttons'][LANGUAGE_NONE])) {
           foreach($variables['field_practical_info_buttons'][LANGUAGE_NONE] as $button) {
             if ($button['value'] == 'show_transport_request') {
               $buttons[] = l('Søg tilskud til transport', '/tilskud-til-transport-skoler-dagtilbud-og-klubber', [
