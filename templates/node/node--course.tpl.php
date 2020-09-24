@@ -266,13 +266,6 @@
                   <?php print render($content['field_facilities_info']); ?>
                 </div>
               <?php endif; ?>
-              <?php if ($practical_info_buttons): ?>
-                <div class="block--field-wrapper block--buttons">
-                  <?php foreach ($practical_info_buttons as $button): ?>
-                    <?php print $button ?>
-                  <?php endforeach; ?>
-                </div>
-              <?php endif; ?>
             </div>
 
             <?php if (module_exists('ulf_world_targets') && isset($world_targets)) : ?>
@@ -282,6 +275,13 @@
             <?php endif;?>
 
           </div>
+              <?php if ($practical_info_buttons): ?>
+                <div class="block--field-wrapper block--buttons">
+                  <?php foreach ($practical_info_buttons as $button): ?>
+                    <?php print $button ?>
+                  <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
           <?php if (module_exists('transportpulje_form') && $group_type != 'ungdomsuddannelse') : ?>
             <?php if (!empty($field_tpf_exclude)) : ?>
               <?php if ($field_tpf_exclude[LANGUAGE_NONE]['0']['value'] != 1) : ?>

@@ -46,8 +46,9 @@ function ulf_aarhus_preprocess_node(&$variables) {
               $buttons[] = l('Søg om refusion af forløbet', $path, [
                 'attributes' => [
                   'class' => ['button'],
-                  'target' => '_blank'
-                ]
+                  'target' => '_blank',
+                ],
+                'query' => ['course' => $variables['nid']],
               ]);
             }
           }
