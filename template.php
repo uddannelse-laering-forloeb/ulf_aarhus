@@ -27,8 +27,9 @@ function ulf_aarhus_preprocess_node(&$variables) {
     switch ($variables['type']) { // Switch on content type.
       case 'course':
         $buttons = [];
+        $term = $variables['field_target_group']['0']['taxonomy_term'];
 
-        if(isset($variables['field_practical_info_buttons'][LANGUAGE_NONE])) {
+        if(isset($variables['field_practical_info_buttons'][LANGUAGE_NONE]) && $term->name != 'Ungdomsuddannelse') {
           foreach($variables['field_practical_info_buttons'][LANGUAGE_NONE] as $button) {
             if ($button['value'] == 'show_transport_request') {
               $buttons[] = l('Søg tilskud til transport', '/tilskud-til-transport-skoler-dagtilbud-og-klubber', [
@@ -41,13 +42,13 @@ function ulf_aarhus_preprocess_node(&$variables) {
 
             // Provide variables for use in the different templates.
             if ($button['value'] == 'show_free_course_request') {
-              $term = $variables['field_target_group']['0']['taxonomy_term'];
               $path = (isset($term) && $term->name === 'Dagtilbud') ? '/ansoeg/udgiftsdaekning/dagtilbud' : '/ansoeg/udgiftsdaekning';
               $buttons[] = l('Søg om refusion af forløbet', $path, [
                 'attributes' => [
                   'class' => ['button'],
-                  'target' => '_blank'
-                ]
+                  'target' => '_blank',
+                ],
+                'query' => ['course' => $variables['nid']],
               ]);
             }
           }
