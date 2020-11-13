@@ -1,1 +1,1 @@
-!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//ssl.siteimprove.com/js/siteanalyze_2240844.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
+window.addEventListener("CookieInformationConsentGiven",function(e){var t,n;CookieInformation.getConsentGivenFor("cookie_cat_statistic")&&((t=document.createElement("script")).type="text/javascript",t.async=!0,t.src="//ssl.siteimprove.com/js/siteanalyze_2240844.js",(n=document.getElementsByTagName("script")[0]).parentNode.insertBefore(t,n))},!1);
